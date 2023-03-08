@@ -20,7 +20,7 @@ if(strpos($message, "!bin") === 0){
     $bin = substr($message, 5);
     $curl = curl_init();
     curl_setopt_array($curl, [
-    CURLOPT_URL => "https://worldbins-bins-api.vercel.app/api/".$bin,
+    CURLOPT_URL => "https://binchk-api.vercel.app/".?bin,
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_FOLLOWLOCATION => true,
     CURLOPT_ENCODING => "",
